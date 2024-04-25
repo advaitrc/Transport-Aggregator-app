@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RideCompare - Compare, Carpool, and Book Shuttles</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Sample CSS for the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .testimonial {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<header class="py-3">
+  <h1>Welcome to RideCompare</h1>
+</header>
+<br>
+<br>
+<div class="container text-center">
+  <button class="btn btn-primary mr-2" onclick="openAngularSite('http://localhost:4200')">Ride Compare</button>
+  <button class="btn btn-primary mr-2" onclick="openAngularSite('http://localhost:52982')">Carpool</button>
+  <button class="btn btn-primary" onclick="openCustomURL('https://snushuttles.com')">Shuttle Booking</button>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="testimonial">
+        <p>"Hand's down the best transport tool on SNU. Help's you find rides at a moment's notice."</p>
+        <p><strong>Akaash Singh</strong>, CSE 24'</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial">
+        <p>"My go to app whenever I have to find rides to travel for conferences. Great UI !"</p>
+        <p><strong>Raghuram Rajan</strong>, Professor Economics</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial">
+        <p>"This app is a life saver. Really helped me navigate my logistics easily and conviniently"</p>
+        <p><strong>Rajesh Bhandari</strong>, BMS 26' </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <button type="button" class="btn btn-primary btn-block" onclick="window.location.href='2.html';">Submit Feedback</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div class="container">
+      <p>&copy; 2024 RideCompare. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+<script>
+function openAngularSite(url) {
+    window.open(url);
+}
+
+function openCustomURL(url) {
+    window.open(url);
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
